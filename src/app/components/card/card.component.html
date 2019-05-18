@@ -10,8 +10,8 @@
     </ng-template>
   </div>
   <div class="descr">
-    <p><span>Name</span>: {{user.first_name}}</p>
-    <p><span>Last Name</span>: {{user.last_name}}</p>
-    <p><span>Email</span>: {{user.email}}</p>
+    <p><span>Name:</span> {{user.first_name}}</p>
+    <p><span>Last Name:</span> {{user.last_name}}</p>
+    <p><span>Email:</span> <a [href]="'mailto:' + user.email">{{user.email}}</a></p>
   </div>
 </div>
