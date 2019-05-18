@@ -7,7 +7,7 @@ import { ReqresService } from 'src/app/services/reqres.service';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.sass']
+  styleUrls: ['./user.component.scss']
 })
 export class UserComponent implements OnInit {
   userId: number;
