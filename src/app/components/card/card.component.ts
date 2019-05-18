@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { User } from 'src/app/models/user';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-card',
@@ -10,13 +11,17 @@ export class CardComponent implements OnInit {
   @Input() users: User[];
   @Input() isDetails: boolean = false;
 
-  constructor() { }
+  constructor(private location: Location) { }
 
   ngOnInit() {
   }
 
   trackByUsers(index: number, user: User): number {
     return user.id;
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }
