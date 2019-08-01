@@ -1,3 +1,9 @@
 <div class="users>">
     <app-card [users]="users" class="users"></app-card>
 </div>
+
+<div class="pages">
+    <span [class.active]="1 === currentPage" (click)="goPage(1)">1</span>
+    <span [class.active]="2 === currentPage" (click)="goPage(2)">2</span>
+    <span [class.active]="3 === currentPage" (click)="goPage(3)">3</span>
+</div>
